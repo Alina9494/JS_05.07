@@ -1,34 +1,22 @@
 firstNumber = prompt("Please type your first Number");
-console.log(firstNumber);
-
-parseFirstNumber = parseFloat(firstNumber);
-console.log(parseFirstNumber);
-
-parseFirstNumber = +parseFirstNumber.toFixed(2);
-console.log(parseFirstNumber);
+firstNumber = parseFloat(firstNumber);
+firstNumber = +firstNumber.toFixed(2);
 
 
 secondNumber = prompt("Please type your second Number");
-console.log(secondNumber);
+secondNumber = parseFloat(secondNumber);
+secondNumber = +secondNumber.toFixed(2);
 
-parseSecondNumber = parseFloat(secondNumber);
-console.log(parseSecondNumber);
-
-parseSecondNumber = +parseSecondNumber.toFixed(2);
-console.log(parseSecondNumber);
-
-min = Math.ceil(parseFirstNumber);
-max = Math.floor(parseSecondNumber);
+min = Math.ceil(firstNumber);
+max = Math.floor(secondNumber);
 
 randomValue = Math.floor(Math.random() * (max - min + 1) + min);
-console.log(randomValue);
 
 alert("Random number is: " + randomValue);
 
 thirdNumber = prompt("Please type your third Number");
-parsethirdNumber = parseFloat(thirdNumber);
-parsethirdNumber = +parsethirdNumber.toFixed(2);
-console.log(parsethirdNumber);
+thirdNumber = parseFloat(thirdNumber);
+thirdNumber = +thirdNumber.toFixed(2);
 
 document.write(`
     <table>
@@ -39,23 +27,23 @@ document.write(`
         </tr>
         <tr>
             <td>Sum</td>
-            <td>${randomValue} + ${parsethirdNumber}</td>
-            <td>${(randomValue + parsethirdNumber).toFixed(2)}</td>
+            <td>${randomValue} + ${thirdNumber}</td>
+            <td>${(randomValue + thirdNumber).toFixed(2)}</td>
         </tr>
         <tr>
             <td>Subtraction</td>
-            <td>${randomValue} - ${parsethirdNumber}</td>
-            <td>${(randomValue - parsethirdNumber).toFixed(2)}</td>
+            <td>${randomValue} - ${thirdNumber}</td>
+            <td>${(randomValue - thirdNumber).toFixed(2)}</td>
         </tr>
         <tr>
             <td>Multiplication</td>
-            <td>${randomValue} * ${parsethirdNumber}</td>
-            <td>${(randomValue * parsethirdNumber).toFixed(2)}</td>
+            <td>${randomValue} * ${thirdNumber}</td>
+            <td>${(randomValue * thirdNumber).toFixed(2)}</td>
         </tr>
         <tr>
             <td>Devision</td>
-            <td>${randomValue} / ${parsethirdNumber}</td>
-            <td>${(randomValue / parsethirdNumber).toFixed(2)}</td>
+            <td>${randomValue} / ${thirdNumber}</td>
+            <td>${(randomValue / thirdNumber).toFixed(2)}</td>
         </tr>
     </table>
 `);
