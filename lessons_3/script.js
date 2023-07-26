@@ -1,8 +1,7 @@
 threeWords = confirm(`Tell me three most important words 💚`);
 
-if(threeWords === false) {
+if(threeWords === true) {
     
-} else {
     firstWord = prompt('Let\'t typing first word');
 
     while(firstWord === null || firstWord === '') {
