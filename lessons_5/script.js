@@ -1,6 +1,6 @@
 arr = [];
 
-lenghtArr = prompt(`Please enter your arr lenght from 2 to 10?`);
+lenghtArr = prompt(`Please enter your arr lenght from 2 to 10`);
 
 minLenght = 2;
 maxLenght = 10;
