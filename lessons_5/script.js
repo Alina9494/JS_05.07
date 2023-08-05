@@ -1,31 +1,30 @@
 arr = [];
-
-lenghtArr = prompt(`Please enter your arr lenght from 2 to 10`);
-
-minLenght = 2;
-maxLenght = 10;
+lengthArr = prompt(`Please enter your arr length from 2 to 10`);
+minLength = 2;
+maxLength = 10;
 minNumber = -10;
 maxNumber = 10;
 
-while(lenghtArr === null 
-    || lenghtArr === ``
-    || Math.abs(lenghtArr) < minLenght
-    || Math.abs(lenghtArr) > maxLenght
+while(lengthArr === null 
+    || lengthArr === ``
+    || Math.abs(lengthArr) < minLength
+    || Math.abs(lengthArr) > maxLength
+    || Number.isNaN(Math.abs(lengthArr))
 ) {
 
-        lenghtArr = prompt(`Please enter your arr lenght from 2 to 10?`);
+    lengthArr = prompt(`Please enter your arr length from 2 to 10`);
 }
 
-    lenghtArr = lenghtArr.trim().replaceAll(` `, ``);
-    lenghtArr = Math.round(lenghtArr);
-    lenghtArr = Math.abs(lenghtArr);
+    lengthArr = lengthArr.trim().replaceAll(` `, ``);
+    lengthArr = Math.round(lengthArr);
+    lengthArr = Math.abs(lengthArr);
     resultValue = 1;
     minValue = 0;
     maxValue = 0;
 
-    arr = new Array(lenghtArr);
+    arr = new Array(lengthArr);
     
-    for(i=0; i<arr.length; i++) {
+    for(i=0; i < arr.length; i++) {
         randomNumber = Math.random() * (maxNumber - (minNumber)) + (minNumber);
         arr[i] = Math.round(randomNumber);
         resultValue = resultValue * arr[i];
@@ -39,8 +38,8 @@ while(lenghtArr === null
         }
     }
 
-    console.log(arr);
-    console.log(resultValue);
+    console.log(`Array number: ${arr}`);
+    console.log(`Multiples result: ${resultValue}`);
     console.log(`Min Number is ${minValue}`);
     console.log(`Max Number is ${maxValue}`);
 
