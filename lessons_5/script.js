@@ -4,6 +4,8 @@ lenghtArr = prompt(`Please enter your arr lenght from 2 to 10`);
 
 minLenght = 2;
 maxLenght = 10;
+minNumber = -10;
+maxNumber = 10;
 
 while(lenghtArr === null 
     || lenghtArr === ``
@@ -22,9 +24,6 @@ while(lenghtArr === null
     maxValue = 0;
 
     arr = new Array(lenghtArr);
-
-    minNumber = -10;
-    maxNumber = 10;
     
     for(i=0; i<arr.length; i++) {
         randomNumber = Math.random() * (maxNumber - (minNumber)) + (minNumber);
