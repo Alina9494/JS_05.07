@@ -21,14 +21,13 @@ function getInfoRow(name, arrAnimals) {
         addStr += `<tr>`
 
         currentElement = arrAnimals[i];
-        console.log(currentElement);
 
         for(j=0; j<currentElement.length; j++) {
             addStr += `<td>${currentElement[j]}</td>`
         }
         addStr += `</tr>`
     }
-    addStr += `</tbody></table>`
+    addStr += `</tbody></table>`;
 
     return addStr 
 }
