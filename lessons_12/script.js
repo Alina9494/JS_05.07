@@ -100,7 +100,8 @@ const getTableRow = (item) => {
     return `<tr>${getColumns}</tr>`
 }
 
-const renderProductsTable = (arr, sale, sort) => {
+const renderProductsTable = (productList, sale, sort) => {
+    const arr = JSON.parse(JSON.stringify(productList));
     const finalPrice = getTotalPrice(arr, sale);
 
     if(sort) {
