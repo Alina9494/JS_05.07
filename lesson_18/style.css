@@ -1,0 +1,47 @@
+*{
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.table__calendar  {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+.head {
+    padding: 3px;
+    border: 1px solid black;
+}
+
+.column {
+    text-align: center;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.td{
+    text-align: center;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.todo{
+    background-color: gray;
+    border-radius: 10px;
+    color: white;
+    padding: 5px;
+}
+
+.todo p{
+    margin-top: 0;
+}
+
+.todo button{
+    cursor: pointer;
+}
+
+.active{
+    background-color: red;
+}
+
+
